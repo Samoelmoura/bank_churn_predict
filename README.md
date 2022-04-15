@@ -1,3 +1,7 @@
+# TopBank Company
+## Predicting Customer Churn
+![](images/capa.jpg)
+
 ## 0.0 Estágio atual do projeto:
 Ciclo 4: Criar as hipóteses de negócio
 
