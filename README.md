@@ -3,7 +3,7 @@
 ![](images/capa.jpg)
 
 ## 0.0 Estágio atual do projeto:
-Ciclo 4: Criar Assumptions com regras de negócio com: cortes em probabildiade de churn entre clientes que vão sair da base independente de qualquer ação, clientes que permenecem na base com uma campanha de retenção agressiva, clientes que permanecem na base com uma campanha moderada, e clientes que permanecem na base com uma campanha de retenção básica. Os custos das campanhas: agressiva, moderada e básica. O Churn médio nas três modalidades de retenção ainda que ofertada a campanha de retenção. 
+Ciclo 4: Criar Assumptions com regras de negócio com: cortes em probabildiade de churn entre clientes que vão sair da base independente de qualquer ação, clientes que permenecem na base com uma campanha de retenção agressiva, clientes que permanecem na base com uma campanha moderada, e clientes que permanecem na base com uma campanha de retenção básica. Os custos das campanhas: agressiva, moderada e básica. O Churn médio nas três modalidades de retenção ainda que ofertada a campanha de retenção. Os custos de cada campanha, por cliente.
 
 ## 0.1 Contexto:
 A TopBank é uma grande empresa de serviços bancários. Ela atua principalmente nos países da Europa oferecendo produtos financeiros, desde contas bancárias até investimentos, passando por alguns tipos de seguros e produto de investimento.
@@ -30,30 +30,50 @@ https://sejaumdatascientist.com/predicao-de-churn/
 Projeto original disponível na plataforma Kaggle
 https://www.kaggle.com/mervetorkan/churndataset
 
-## 0.2 Estratégia da Solução:
+## 0.1 Tools, Requirementes
+1. Linguagem: Python
+2. Desenvolvimento e entrega do projeto: Jupyter Notebook
+3. Cloud: Heroku
+4. Plataforma de request: Google Sheets
 
-#### 0.2.1 Objetivos:
+## 0.2 Business Assumptions
+
+###### 0.2.1 Sobre o benefício oferecido para retenção
+Os times de Marketing em conjunto com o time de Negócios da empresa estipulou um programa de retenção de clientes que deverá seguir os seguintes critérios:
+1. Serão ofertados Gift Cards aos clientes com valores de $200,00, $100,00 ou $50,00.
+2. O teto máximo de custo total de Gift Cards não poderá ser superior a $50.000,00.
+
+###### 0.2.2 Sobre o churn esperado
+Dadas as probabilidades de churn que o modelo irá predizer teremos:
+1. Clientes com probabilidade de churn acima de 99% sairão da base não importa o que lhes seja oferecido.
+2. Clientes com probabilidade de churn entre 95% e 99% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $200,00
+3. Clientes com probabilidade de churn entre 90% e 95% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $100,00
+4. Clientes com probabilidade de churn entre 50% e 90% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $50,00
+
+## 0.3 Estratégia da Solução:
+
+#### 0.3.1 Objetivos:
 1. Qual a taxa atual de Churn da Top-Bank, qual é o seu custo financeiro para a empresa por perda de faturamento?
 2. Qual a performance do modelo em classificar os clientes como churn?
 3. Qual o retorno esperado, em termos de faturamento, se a empresa utilizar seu modelo para evitar o churn dos clientes?
 
-#### 0.2.2 Proposta de Solução:
+#### 0.3.2 Proposta de Solução:
 1. Definir a baseline de churn atual e qual é seu custo para a empresa.
 2. Escolher métrica de performance, modelar o problema e treinar.
 3. Definido a baseline (problema 1), scorar os clientes, suas probabilidades de churn, definir programa de giftcards, mensurar probabilidade de conversão de clientes em churn, e custo do programa. Retorno financeiro = Churn atual - (menos) Churn predito após programa de giftcards - (menos) custo do programa.
 
-#### 0.2.3 Inputs:
+#### 0.3.3 Inputs:
 1. Problema de negócio
 2. Conjunto de dados com características de 10.000 clientes e seus status de churn
 
-#### 0.2.4 Outputs:
+#### 0.3.4 Outputs:
 1. Taxa atuai de CHURN, uma porcentagem em Jupyter Notebook (Porcentagem)
 3. Métricas do modelo (Métrica F1-Score)
 3. Receita gerada pela redução de churn (Valor em moeda)
 4. Tabela de banco de dados SQL com todas as classificações
 5. API com request/predict do tipo: | v1 | v2 | v3 | - 1/0
 
-#### 0.2.5 Ciclos:
+#### 0.3.5 Ciclos:
 1. Criar um pipeline de dados funcional, de ponta a ponta (desde a coleta de dados até o 
     treinamento do modelo)
 2. Entender os dados e limpa-los (buscar inconsistências) Análises de estatística
@@ -65,7 +85,7 @@ https://www.kaggle.com/mervetorkan/churndataset
 7. Analisar métricas
 8. Resultados e conclusão
 
-## 0.3 Significado das features:
+## 0.4 Significado das features:
 
 1. RowNumber: O número da linha
 2. CustomerID: Identificador único do cliente
@@ -82,4 +102,4 @@ https://www.kaggle.com/mervetorkan/churndataset
 13. EstimateSalary: Estimativa do salário mensal do cliente.
 14. Exited: Indica se o cliente está ou não em Churn.
 
-## 0.4 Sumário:
+## 0.5 Sumário:
