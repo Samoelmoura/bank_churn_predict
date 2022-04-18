@@ -3,7 +3,7 @@
 ![](images/capa.jpg)
 
 ## 0.0 Estágio atual do projeto:
-Ciclo 4: Criar as hipóteses de negócio
+Ciclo 4: Criar Assumptions com regras de negócio com: cortes em probabildiade de churn entre clientes que vão sair da base independente de qualquer ação, clientes que permenecem na base com uma campanha de retenção agressiva, clientes que permanecem na base com uma campanha moderada, e clientes que permanecem na base com uma campanha de retenção básica. Os custos das campanhas: agressiva, moderada e básica. O Churn médio nas três modalidades de retenção ainda que ofertada a campanha de retenção. 
 
 ## 0.1 Contexto:
 A TopBank é uma grande empresa de serviços bancários. Ela atua principalmente nos países da Europa oferecendo produtos financeiros, desde contas bancárias até investimentos, passando por alguns tipos de seguros e produto de investimento.
