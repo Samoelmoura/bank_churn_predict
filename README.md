@@ -1,9 +1,6 @@
 # TopBank Company
 ## Predicting Customer Churn
-![](images/capa.jpg)
-
-## 0.0 Estágio atual do projeto:
-Ciclo 4: Criar Assumptions com regras de negócio com: cortes em probabildiade de churn entre clientes que vão sair da base independente de qualquer ação, clientes que permenecem na base com uma campanha de retenção agressiva, clientes que permanecem na base com uma campanha moderada, e clientes que permanecem na base com uma campanha de retenção básica. Os custos das campanhas: agressiva, moderada e básica. O Churn médio nas três modalidades de retenção ainda que ofertada a campanha de retenção. Os custos de cada campanha, por cliente.
+![](img/capa.jpg)
 
 ## 0.1 Contexto:
 A TopBank é uma grande empresa de serviços bancários. Ela atua principalmente nos países da Europa oferecendo produtos financeiros, desde contas bancárias até investimentos, passando por alguns tipos de seguros e produto de investimento.
@@ -103,3 +100,8 @@ Dadas as probabilidades de churn que o modelo irá predizer teremos:
 14. Exited: Indica se o cliente está ou não em Churn.
 
 ## 0.5 Sumário:
+
+## 0.6 Próximos Passos:
+
+## 0.7 Estágio Atual do Projeto:
+![](img/bank.PNG)
