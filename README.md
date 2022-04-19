@@ -101,7 +101,7 @@ Dadas as probabilidades de churn que o modelo irá predizer teremos:
 
 ## 0.5 Sumário:
 
-## 0.6 Próximos Passos:
+## 0.6 Próximos Passos: Converter métricas de performance do modelo em resultados de negócio.
 
 ## 0.7 Estágio Atual do Projeto:
 ![](img/bank.PNG)
