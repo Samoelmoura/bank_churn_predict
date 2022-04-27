@@ -2,7 +2,7 @@
 ## Predicting Customer Churn
 ![](img/capa.jpg)
 
-## 1.1 Contexto:
+## 1.0 Contexto:
 A TopBank é uma grande empresa de serviços bancários. Ela atua principalmente nos países da Europa oferecendo produtos financeiros, desde contas bancárias até investimentos, passando por alguns tipos de seguros e produto de investimento.
 
 O modelo de negócio da empresa é do tipo serviço, ou seja, ela comercializa serviços bancários para seus clientes através de agências físicas e um portal online. 
@@ -27,50 +27,50 @@ https://sejaumdatascientist.com/predicao-de-churn/
 Projeto original disponível na plataforma Kaggle
 https://www.kaggle.com/mervetorkan/churndataset
 
-## 1.2 Tools, Requirementes
+## 2.0 Tools, Requirementes
 1. Linguagem: Python
 2. Desenvolvimento e entrega do projeto: Jupyter Notebook
 3. Cloud: Heroku
 4. Plataforma de request: Google Sheets
 
-## 1.3 Business Assumptions
+## 3.0 Business Assumptions
 
-###### 1.3.1 Sobre o benefício oferecido para retenção
+###### 3.1 Sobre o benefício oferecido para retenção
 Os times de Marketing em conjunto com o time de Negócios da empresa estipulou um programa de retenção de clientes que deverá seguir os seguintes critérios:
 1. Serão ofertados Gift Cards aos clientes com valores de $200,00, $100,00 ou $50,00.
 2. O teto máximo de custo total de Gift Cards não poderá ser superior a $50.000,00.
 
-###### 1.3.2 Sobre o churn esperado
+###### 3.2 Sobre o churn esperado
 Dadas as probabilidades de churn que o modelo irá predizer teremos:
-1. Clientes com probabilidade de churn acima de 99% sairão da base não importa o que lhes seja oferecido.
-2. Clientes com probabilidade de churn entre 95% e 99% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $200,00
-3. Clientes com probabilidade de churn entre 90% e 95% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $100,00
-4. Clientes com probabilidade de churn entre 50% e 90% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $50,00
+* Clientes com probabilidade de churn acima de 99% sairão da base não importa o que lhes seja oferecido.
+* Clientes com probabilidade de churn entre 95% e 99% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $200,00
+* Clientes com probabilidade de churn entre 90% e 95% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $100,00
+* Clientes com probabilidade de churn entre 50% e 90% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $50,00
 
-## 1.4 Estratégia da Solução:
+## 4.0 Estratégia da Solução:
 
-#### 1.4.1 Objetivos:
+#### 4.1 Objetivos:
 1. Qual a taxa atual de Churn da Top-Bank, qual é o seu custo financeiro para a empresa por perda de faturamento?
 2. Qual a performance do modelo em classificar os clientes como churn?
 3. Qual o retorno esperado, em termos de faturamento, se a empresa utilizar seu modelo para evitar o churn dos clientes?
 
-#### 1.4.2 Proposta de Solução:
+#### 4.2 Proposta de Solução:
 1. Definir a baseline de churn atual e qual é seu custo para a empresa.
 2. Escolher métrica de performance, modelar o problema e treinar.
 3. Definido a baseline (problema 1), scorar os clientes, suas probabilidades de churn, definir programa de giftcards, mensurar probabilidade de conversão de clientes em churn, e custo do programa. Retorno financeiro = Churn atual - (menos) Churn predito após programa de giftcards - (menos) custo do programa.
 
-#### 1.4.3 Inputs:
+#### 4.3 Inputs:
 1. Problema de negócio
 2. Conjunto de dados com características de 10.000 clientes e seus status de churn
 
-#### 1.4.4 Outputs:
+#### 4.4 Outputs:
 1. Taxa atuai de CHURN, uma porcentagem em Jupyter Notebook (Porcentagem)
 3. Métricas do modelo (Métrica F1-Score)
 3. Receita gerada pela redução de churn (Valor em moeda)
 4. Tabela de banco de dados SQL com todas as classificações
 5. API com request/predict do tipo: | v1 | v2 | v3 | - 1/0
 
-#### 1.4.5 Ciclos:
+#### 4.5 Ciclos:
 1. Criar um pipeline de dados funcional, de ponta a ponta (desde a coleta de dados até o 
     treinamento do modelo)
 2. Entender os dados e limpa-los (buscar inconsistências) Análises de estatística
@@ -82,28 +82,28 @@ Dadas as probabilidades de churn que o modelo irá predizer teremos:
 7. Analisar métricas
 8. Resultados e conclusão
 
-## 1.5 Top 3 Data Insights
-## 1.6 Machine Learning Model Applied
-## 1.7 Machine Learning Performance
-## 1.8 Business Results
-## 1.9 Leasson Learned
+## 5.0 Top 3 Data Insights
+## 6.0 Machine Learning Model Applied
+## 7.0 Machine Learning Performance
+## 8.0 Business Results
+## 9.0 Leasson Learned
 
-## 1.10 Sumário:
+## 10.0 Sumário:
 
-1. RowNumber: O número da linha
-2. CustomerID: Identificador único do cliente
-3. Surname: Sobrenome do cliente.
-4. CreditScore: A pontuação de Crédito do cliente para o mercado de consumo.
-5. Geography: O país onde o cliente reside.
-6. Gender: O gênero do cliente.
-7. Age: A idade do cliente.
-8. Tenure: Número de anos que o cliente permaneceu ativo.
-9. Balance: Valor monetário que o cliente tem em sua conta bancária.
-10. NumOfProducts: O número de produtos comprado pelo cliente no banco.
-11. HasCrCard: Indica se o cliente possui ou não cartão de crédito.
-12. IsActiveMember: Indica se o cliente fez pelo menos uma movimentação na conta bancário dentro de 12 meses.
-13. EstimateSalary: Estimativa do salário mensal do cliente.
-14. Exited: Indica se o cliente está ou não em Churn.
+* RowNumber: O número da linha
+* CustomerID: Identificador único do cliente
+* Surname: Sobrenome do cliente.
+* CreditScore: A pontuação de Crédito do cliente para o mercado de consumo.
+* Geography: O país onde o cliente reside.
+* Gender: O gênero do cliente.
+* Age: A idade do cliente.
+* Tenure: Número de anos que o cliente permaneceu ativo.
+* Balance: Valor monetário que o cliente tem em sua conta bancária.
+* NumOfProducts: O número de produtos comprado pelo cliente no banco.
+* HasCrCard: Indica se o cliente possui ou não cartão de crédito.
+* IsActiveMember: Indica se o cliente fez pelo menos uma movimentação na conta bancário dentro de 12 meses.
+* EstimateSalary: Estimativa do salário mensal do cliente.
+* Exited: Indica se o cliente está ou não em Churn.
 
 ## 1.11 Próximos Passos: Converter métricas de performance do modelo em resultados de negócio.
 
