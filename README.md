@@ -85,6 +85,7 @@ Dadas as probabilidades de churn que o modelo irá predizer teremos:
 ## 5.0 Top 3 Data Insights
 ## 6.0 Machine Learning Model Applied
 ## 7.0 Machine Learning Performance
+![](img/metrics.jpg)
 ## 8.0 Business Results
 ## 9.0 Leasson Learned
 
