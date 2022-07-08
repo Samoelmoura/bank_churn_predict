@@ -48,7 +48,6 @@ Dadas as probabilidades de churn que o modelo irá predizer teremos:
 * Clientes com probabilidade de churn entre 50% e 90% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $50,00
 
 ## 4.0 Estratégia da Solução:
-
 #### 4.1 Objetivos:
 1. Qual a taxa atual de Churn da Top-Bank, qual é o seu custo financeiro para a empresa por perda de faturamento?
 2. Qual a performance do modelo em classificar os clientes como churn?
@@ -64,11 +63,10 @@ Dadas as probabilidades de churn que o modelo irá predizer teremos:
 2. Conjunto de dados com características de 10.000 clientes e seus status de churn
 
 #### 4.4 Outputs:
-1. Taxa atuai de CHURN, uma porcentagem em Jupyter Notebook (Porcentagem)
-3. Métricas do modelo (Métrica F1-Score)
+1. Taxa atuai de CHURN, uma porcentagem em Jupyter Notebook (Porcentagem) e o seu custo para a empresa.
+3. Definir uma métrica que esteja alinhada com o problema de negócio e o modelo de negócio da empresa.
 3. Receita gerada pela redução de churn (Valor em moeda)
-4. Tabela de banco de dados SQL com todas as classificações
-5. API com request/predict do tipo: | v1 | v2 | v3 | - 1/0
+4. API com request através de Google Sheets do tipo: | v1 | v2 | v3 | - 1/0
 
 #### 4.5 Ciclos:
 1. Criar um pipeline de dados funcional, de ponta a ponta (desde a coleta de dados até o 
@@ -83,14 +81,18 @@ Dadas as probabilidades de churn que o modelo irá predizer teremos:
 8. Resultados e conclusão
 
 ## 5.0 Top 3 Data Insights
+1. Clientes com 3 ou 4 produtos têm maior probabilidade de churn, com 80% e 100% de churn 
+2. Membros ativos são 47% menos propensos ao churn
+3. Média de idade de clientes em churn é de 45, já os em não churn é de 37
 ## 6.0 Machine Learning Model Applied
+XGBoost Classifier
 ## 7.0 Machine Learning Performance
 ![](img/metrics.jpg)
 ## 8.0 Business Results
+Em uma base com 2000 clientes, utilizando um modelo de Machine Learning para ranquear os clientes de acordo com a sua propensão ao CHURN, e ordenando-os de acordo com o ROI, o modelo obteve um LIFT de: $566533.04 em relação à um método aleatório. O modelo foi melhor em uma razão de: 23X
 ## 9.0 Leasson Learned
 
 ## 10.0 Sumário:
-
 * RowNumber: O número da linha
 * CustomerID: Identificador único do cliente
 * Surname: Sobrenome do cliente.
@@ -106,7 +108,7 @@ Dadas as probabilidades de churn que o modelo irá predizer teremos:
 * EstimateSalary: Estimativa do salário mensal do cliente.
 * Exited: Indica se o cliente está ou não em Churn.
 
-## 1.11 Próximos Passos: Converter métricas de performance do modelo em resultados de negócio.
+## 11.0 Próximos Passos: 
 
-## 1.12 Estágio Atual do Projeto:
-![](img/bank.PNG)
+## 12.0 Estágio Atual do Projeto:
+![](img/status.jpg)
