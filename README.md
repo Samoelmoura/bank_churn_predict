@@ -105,7 +105,10 @@ Em uma base com 2000 clientes, utilizando um modelo de Machine Learning para ran
 * Exited: Indica se o cliente está ou não em Churn.
 
 ## 11.0 Próximos Passos: 
-Criar Storytelling para apresentar os resultados.
+- Conversar com os líderes para entender melhor a feature Balance, e entender porque ela apresenta comportamento diferente de país para país.
+- Entender melhor o Salário Estimado, valores muito baixos para serem tidos como salário anual.
+- Coletar mais atributos dos clientes
 
 ## 12.0 Estágio Atual do Projeto:
+Criar Storytelling para apresentar os resultados.
 ![](img/status.jpg)
