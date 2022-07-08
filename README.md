@@ -105,6 +105,7 @@ Em uma base com 2000 clientes, utilizando um modelo de Machine Learning para ran
 * Exited: Indica se o cliente está ou não em Churn.
 
 ## 11.0 Próximos Passos: 
+Criar Storytelling para apresentar os resultados.
 
 ## 12.0 Estágio Atual do Projeto:
 ![](img/status.jpg)
