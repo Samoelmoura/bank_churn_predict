@@ -37,8 +37,11 @@ https://www.kaggle.com/mervetorkan/churndataset
 
 ###### 3.1 Sobre o benefício oferecido para retenção
 Os times de Marketing em conjunto com o time de Negócios da empresa estipulou um programa de retenção de clientes que deverá seguir os seguintes critérios:
-1. Serão ofertados Gift Cards aos clientes com valores de $200,00, $100,00 ou $50,00.
-2. O teto máximo de custo total de Gift Cards não poderá ser superior a $50.000,00.
+- Clientes com propensidade de churn maior que 99% - Farão churn não importa o que se faça
+- Clientes com propensidade de churn entre 95% e 99% receberão 200,00 de Gift Card
+- Clientes com propensidade de churn entre 90% e 95% receberão 100,00 de Gift Card
+- Clientes com propensidade de churn abaixo de 90% receberão 50,00 de Gift Card
+- O total de budgit para a ação é de 10.000,00
 
 ###### 3.2 Sobre o churn esperado
 Dadas as probabilidades de churn que o modelo irá predizer teremos:
