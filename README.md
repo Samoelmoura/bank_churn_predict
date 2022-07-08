@@ -43,13 +43,6 @@ Os times de Marketing em conjunto com o time de Negócios da empresa estipulou u
 - Clientes com propensidade de churn abaixo de 90% receberão 50,00 de Gift Card
 - O total de budgit para a ação é de 10.000,00
 
-###### 3.2 Sobre o churn esperado
-Dadas as probabilidades de churn que o modelo irá predizer teremos:
-* Clientes com probabilidade de churn acima de 99% sairão da base não importa o que lhes seja oferecido.
-* Clientes com probabilidade de churn entre 95% e 99% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $200,00
-* Clientes com probabilidade de churn entre 90% e 95% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $100,00
-* Clientes com probabilidade de churn entre 50% e 90% não deixarão a base contanto que lhers seja oferecido um Gift Card de pelo menos $50,00
-
 ## 4.0 Estratégia da Solução:
 #### 4.1 Objetivos:
 1. Qual a taxa atual de Churn da Top-Bank, qual é o seu custo financeiro para a empresa por perda de faturamento?
