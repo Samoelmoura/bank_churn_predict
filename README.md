@@ -102,9 +102,9 @@ Em uma base com 2000 clientes, utilizando um modelo de Machine Learning para ran
 * HasCrCard: Indica se o cliente possui ou não cartão de crédito.
 * IsActiveMember: Indica se o cliente fez pelo menos uma movimentação na conta bancário dentro de 12 meses.
 * EstimateSalary: Estimativa do salário mensal do cliente.
-* Exited: Indica se o cliente está ou não em Churn.
+* Exited: Indica se o cliente está ou não em Churn. 
 
-## 11.0 Próximos Passos: 
+## 11.0 Próximos Passos:
 - Conversar com os líderes para entender melhor a feature Balance, e entender porque ela apresenta comportamento diferente de país para país.
 - Entender melhor o Salário Estimado, valores muito baixos para serem tidos como salário anual.
 - Coletar mais atributos dos clientes
