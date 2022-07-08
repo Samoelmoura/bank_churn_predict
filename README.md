@@ -21,7 +21,7 @@ De maneira geral, Churn é uma métrica que indica o número de clientes que can
 
 Outro exemplo seria os clientes que não fazem uma compra à mais de 60 dias. Esse clientes podem ser considerados clientes em churn até que uma compra seja realizada. O período de 60 dias é totalmente arbitrário e varia entre empresas. 
 
-Projeto retirado do Blog Seja Um Data Scientist.
+Projeto retirado do Blog Seja Um Data Scientist
 https://sejaumdatascientist.com/predicao-de-churn/
 
 Projeto original disponível na plataforma Kaggle
@@ -104,7 +104,7 @@ Em uma base com 2000 clientes, utilizando um modelo de Machine Learning para ran
 * EstimateSalary: Estimativa do salário mensal do cliente.
 * Exited: Indica se o cliente está ou não em Churn. 
 
-## 11.0 Próximos Passos: 
+## 11.0 Próximos Passos:
 - Conversar com os líderes para entender melhor a feature Balance, e entender porque ela apresenta comportamento diferente de país para país.
 - Entender melhor o Salário Estimado, valores muito baixos para serem tidos como salário anual.
 - Coletar mais atributos dos clientes
