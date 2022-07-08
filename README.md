@@ -110,5 +110,7 @@ Em uma base com 2000 clientes, utilizando um modelo de Machine Learning para ran
 - Coletar mais atributos dos clientes
 
 ## 12.0 Estágio Atual do Projeto:
-Criar Storytelling para apresentar os resultados.
+
+**Criar Storytelling para apresentar os resultados.**
+
 ![](img/status.jpg)
