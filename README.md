@@ -21,12 +21,6 @@ De maneira geral, Churn é uma métrica que indica o número de clientes que can
 
 Outro exemplo seria os clientes que não fazem uma compra à mais de 60 dias. Esse clientes podem ser considerados clientes em churn até que uma compra seja realizada. O período de 60 dias é totalmente arbitrário e varia entre empresas. 
 
-Projeto retirado do Blog Seja Um Data Scientist
-https://sejaumdatascientist.com/predicao-de-churn/
-
-Projeto original disponível na plataforma Kaggle
-https://www.kaggle.com/mervetorkan/churndataset
-
 ## 2.0 Tools, Requirementes
 1. Linguagem: Python
 2. Desenvolvimento e entrega do projeto: Jupyter Notebook
