@@ -1,3 +1,4 @@
+# Olá, seja bem vindo ao meu diretório. Para acessar o pipeline do projeto, clique na pasta "notebooks" e em seguida no arquivo "notebook.ipynb" :smiley:
 # TopBank Company
 ## Predicting Customer Churn
 ![](img/capa.jpg)
